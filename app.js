@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Solve CORS
-app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+app.use(cors());
 
 // db connection
 require("./src/database/db.js");
